@@ -3,6 +3,15 @@ This repository was created for the Coursera JHU Data Science Specialization
 
 ##Contents:
 
+#rankall.R
+A R function that reads a CSV file containing hospital 30-day mortality rates for the metrics "heart attack", "heart failure" and "pneumonia," and returns a data frame containing the ith ranked hospital in each state (where lower mortality rates are preferred).  If the ith rank doesn't exist for a state, then NA is returned.  Entering "best" returns the top ranked hospitals in each state, and entering worst ranks the least well performing hospital in each state.  The creation of this program was part of the third assignment for "R Programming."
+
+#rankhospital.R
+A R function that reads a CSV file containing hospital 30-day mortality rates for the metrics "heart attack", "heart failure" and "pneumonia," and returns the ith ranked hospital for a given state.  If the ith ranked hospital doesn't exist for a given state, then NA is returned.  Instead of the ith rank, "best" may be entered to return the name of the best hospital for the state or "worst" may be entered to return the name of the worst hospital in the state by 30-day mortality rate. The creation of this program was part of the third assignment for "R Programming."
+
+#best.R
+A R function that reads a CSV file containing hospital 30-day mortality rates for the metrics "heart attack", "heart failure" and "pneumonia," and returns the name of the hospital with the lowest 30-day mortality rate for a given state. The creation of this program was part of the third assignment for "R Programming."
+
 #cachematrix.R 
 This program contains two functions: "makeCacheMatrix" and "cacheSolve."  makeCacheMatrix creates a special "matrix" object that can cache its inverse once calculated.  cacheSolve computes the inverse of the special "matrix" returned by first function and stores it back in the object for faster retrieval later.  If the cacheSolve function is called on the object a second time (i.e. after an inverse has been solved) the function returns the cached inverse immediately without requiring complex computations again.  Please note that this program assumes that the matrix evaluated has an inverse. The creation of this program was part of the second assignment for "R Programming."
 
